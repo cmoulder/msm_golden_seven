@@ -1,0 +1,41 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
+</head>
+
+<h2><a href="/movies">Movies</a> <a href="/directors">Directors</a> <a href="/actors">Actors</a> </h2>
+<br>
+<h1>Update Director <%= @director.id %></h1>
+
+<form action="/update_director/<%= @director.id %>">
+
+  <label for="name">
+    Name
+  </label>
+  <input type="text" id="name" name="name" value="<%= @director.name %>">
+
+  <br>
+
+  <label for="dob">
+    Dob
+  </label>
+  <input type="text" id="dob" name="dob" value="<%= @director.dob %>">
+
+  <br>
+
+  <label for="bio">
+    Bio
+  </label>
+  <textarea id="bio" name="bio" rows="3"><%= @director.bio %></textarea>
+
+  <br>
+
+  <label for="image_url">
+    Image URL
+  </label>
+  <input type="text" id="image_url" name="image_url" value="<%= @director.image_url %>">
+
+  <br>
+
+  <input type="submit" value="Update Director" class="btn btn-primary">
+
+</form>

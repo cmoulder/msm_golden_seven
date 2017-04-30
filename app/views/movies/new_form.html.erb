@@ -1,0 +1,48 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
+</head>
+
+<h2><a href="/movies">Movies</a> <a href="/directors">Directors</a> <a href="/actors">Actors</a> </h2>
+<br>
+<h1>Add Movie</h1>
+
+<form action="/create_movie">
+
+  <label for="title">
+    Title
+  </label>
+  <input type="text" id="title" name="title" placeholder="Title">
+
+  <br>
+
+  <label for="year">
+    Dob
+  </label>
+  <input type="text" id="year" name="year" placeholder="Year">
+
+  <br>
+
+  <label for="duration">
+    Dob
+  </label>
+  <input type="text" id="duration" name="duration" placeholder="Duration">
+
+  <br>
+
+  <label for="Description">
+    Bio
+  </label>
+  <textarea id="description" name="description" placeholder="Description" rows="3"></textarea>
+
+  <br>
+
+  <label for="image_url">
+    Image URL
+  </label>
+  <input type="text" id="image_url" name="image_url" placeholder="Image url">
+
+  <br>
+
+  <input type="submit" value="Create Movie" class="btn btn-primary">
+
+</form>
